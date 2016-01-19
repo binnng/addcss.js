@@ -7,7 +7,7 @@
  */
 
 function createStyle( rules ) {
-    var tag  = doc.createElement( 'STYLE' );
+    var tag  = document.createElement( 'STYLE' );
     tag.type = 'text/css';
     if ( tag.styleSheet ) {
         tag.styleSheet.cssText = rules;
@@ -18,7 +18,7 @@ function createStyle( rules ) {
 }
 
 function addCSS(style) {
-	(doc.head || doc.body).appendChild(createStyle(style));
+	(document.head || document.body).appendChild(createStyle(style));
 }
 
 if (typeof module != "undefined" && module.exports) {
